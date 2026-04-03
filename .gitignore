@@ -1,0 +1,37 @@
+# Ignore huge media files that exceed GitHub's 100MB limit
+assets/INTERVIEW Client.mp4
+assets/PROJET NAAN .pdf
+assets/wetransfer_caldeira_2026-01-04_1030.zip
+
+# Ignore temporary screenshot worker scripts
+.tmp-screenshot/
+
+# Ignore raw source files
+*.ai
+*.psd
+*.zip
+*.svg
+assets/CALDEIRA/
+.DS_Store
+assets/*proposal*.pdf
+
+# Ignore raw source files
+*.ai
+*.psd
+*.zip
+*.svg
+assets/CALDEIRA/
+.DS_Store
+
+# Super-strict media ignores for slow connections
+assets/Vidéo Présentation APP.mp4
+assets/Justix proposal*.pdf
+assets/*.zip
+assets/CALDEIRA/
+*.pdf
+!assets/Maison Siraya.pdf
+assets/PROJET NAAN*
+assets/INTERVIEW*
+*.psd
+*.zip
+assets/CALDEIRA/

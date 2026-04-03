@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence Portfolio | The Obsidian Gallery</title>
+    <!-- Google Fonts: Epilogue, Manrope, Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700;900&family=Manrope:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="cursor-follower"></div>
+
+    <nav class="glass-nav" style="display: flex; justify-content: space-between; align-items: center;">
+        <a href="#" class="logo" style="text-decoration: none; display: block;">
+            <div style="font-size: 1.5rem; font-weight: 800; letter-spacing: 0.1em; color: var(--on-surface);">
+                PORTFOLLIO.<span style="color: var(--primary);">AGENCE</span></div>
+        </a>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <a href="#contact" class="btn-primary nav-cta"
+                style="margin-top: 0; padding: 0.7rem 1.6rem; font-size: 0.8rem; border-radius: 100px; text-decoration: none;">DÉMARRER
+                UN PROJET</a>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">STUDIO CRÉATIF DIGITAL</p>
+            <h1 class="display-lg">Nous Créons<br>des Expériences<br><span class="gradient-text">Premium</span>.</h1>
+            <p class="hero-description"
+                style="font-size: 1.25rem; color: var(--on-surface-variant); max-width: 650px; margin-top: 1.5rem; margin-bottom: 2rem; line-height: 1.6;">
+                Agence Digitale 360° : Création de sites, applications mobiles et campagnes marketing. Décuplez votre
+                chiffre d'affaires grâce à notre expertise. Nous construisons des écosystèmes digitaux sur-mesure conçus
+                pour captiver votre audience et faire exploser vos conversions.</p>
+
+            <div class="hero-services"
+                style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; max-width: 700px;">
+                <div class="glass-panel"
+                    style="padding: 0.6rem 1.2rem; border-radius: 99px; border: 1px solid rgba(164,165,255,0.4);">
+                    <span
+                        style="font-family: 'Space Grotesk', monospace; font-size: 0.85rem; color: var(--primary); font-weight: 700; letter-spacing: 0.05em;">SITES
+                        WEB HAUTE PERFORMANCE</span>
+                </div>
+                <div class="glass-panel"
+                    style="padding: 0.6rem 1.2rem; border-radius: 99px; border: 1px solid rgba(0,238,252,0.4);">
+                    <span
+                        style="font-family: 'Space Grotesk', monospace; font-size: 0.85rem; color: var(--secondary); font-weight: 700; letter-spacing: 0.05em;">APPLICATIONS
+                        MOBILES SUR-MESURE</span>
+                </div>
+                <div class="glass-panel"
+                    style="padding: 0.6rem 1.2rem; border-radius: 99px; border: 1px solid rgba(164,165,255,0.4);">
+                    <span
+                        style="font-family: 'Space Grotesk', monospace; font-size: 0.85rem; color: var(--primary); font-weight: 700; letter-spacing: 0.05em;">ACQUISITION
+                        & MARKETING DIGITAL</span>
+                </div>
+                <div class="glass-panel"
+                    style="padding: 0.6rem 1.2rem; border-radius: 99px; border: 1px solid rgba(0,238,252,0.4);">
+                    <span
+                        style="font-family: 'Space Grotesk', monospace; font-size: 0.85rem; color: var(--secondary); font-weight: 700; letter-spacing: 0.05em;">MAXIMISATION
+                        CONVERSIONS CLIENT</span>
+                </div>
+            </div>
+
+            <button class="btn-primary" style="margin-top: 1.5rem;"
+                onclick="document.querySelector('.gallery-container').scrollIntoView({behavior: 'smooth'})">EXPLORER LA
+                GALERIE</button>
+        </div>
+        <div class="hero-background"></div>
+    </header>
+
+    <main class="gallery-container">
+        <!-- Bento Grid item 1: SAVE YOUR CAR -->
+        <article class="bento-card bento-card-large group" data-project="save-your-car">
+            <video class="bg-video lazy-video" loop muted playsinline>
+                <source data-src="assets/Vidéo Présentation APP.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">
+                <p class="label-sm">APPLICATION MOBILE</p>
+                <h2 class="headline-sm">Save Your Car</h2>
+            </div>
+        </article>
+
+        <!-- Bento Grid item 2: JUSTIX -->
+        <article class="bento-card bento-card-tall group" data-project="justix">
+            <div class="card-bg justix-bg"></div>
+            <div class="card-content">
+                <p class="label-sm">IMAGE DE MARQUE & WEB</p>
+                <h2 class="headline-sm">Justix</h2>
+            </div>
+        </article>
+
+        <!-- Bento Grid item 3: CALDEIRA -->
+        <article class="bento-card bento-card-wide group" data-project="caldeira">
+            <!-- Replace with actual MP4 background later -->
+            <video class="bg-video lazy-video" loop muted playsinline>
+                <source data-src="assets/Caldeira.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">
+                <p class="label-sm">E-COMMERCE & IDENTITÉ</p>
+                <h2 class="headline-sm">Caldeira</h2>
+            </div>
+        </article>
+
+        <!-- Bento Grid item 4: MAISON SIRAYA -->
+        <article class="bento-card group" data-project="maison-siraya">
+            <div class="card-bg siraya-bg"></div>
+            <div class="card-content">
+                <p class="label-sm">CHARTE GRAPHIQUE</p>
+                <h2 class="headline-sm">Maison Siraya</h2>
+            </div>
+        </article>
+
+        <!-- Bento Grid item 5: NAAN RESTAURANT -->
+        <article class="bento-card group" data-project="naan">
+            <div class="card-bg naan-bg"></div>
+            <div class="card-content">
+                <p class="label-sm">IDENTITÉ & COMMUNICATION</p>
+                <h2 class="headline-sm">Naan Restaurant</h2>
+            </div>
+        </article>
+    </main>
+
+    <!-- Nos Sites Section -->
+    <section class="nos-sites-section" id="nos-sites"
+        style="padding: var(--spacing-16); padding-top: 0; margin-bottom: var(--spacing-24);">
+        <div style="margin-bottom: 3rem;">
+            <p class="eyebrow" style="margin-bottom: 0.5rem;">RÉALISATIONS</p>
+            <h2 class="display-lg" style="font-size: 3.5rem;">Nos <span class="gradient-text">Sites Externes</span></h2>
+        </div>
+
+        <div class="sites-grid"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--spacing-6);">
+
+            <a href="https://oceanbeef.framer.website/" class="bento-card group" target="_blank"
+                style="aspect-ratio: 16/9; text-decoration: none;">
+                <div class="card-bg ocean-beef-site-bg"
+                    style="background-color: #1f1f22; border: 1px solid rgba(164,165,255,0.1);"></div>
+                <div class="card-content">
+                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION CLIENT</p>
+                    <h2 class="headline-sm" style="font-size: 1.4rem;">Ocean Beef</h2>
+                </div>
+            </a>
+
+            <a href="https://www.caldeiraparfums.com/" class="bento-card group" target="_blank"
+                style="aspect-ratio: 16/9; text-decoration: none;">
+                <div class="card-bg caldeira-site-bg"
+                    style="background-color: #1f1f22; border: 1px solid rgba(164,165,255,0.1);"></div>
+                <div class="card-content">
+                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION CLIENT</p>
+                    <h2 class="headline-sm" style="font-size: 1.4rem;">Caldeira Parfums</h2>
+                </div>
+            </a>
+
+            <a href="https://lp111.framer.website/" class="bento-card group" target="_blank"
+                style="aspect-ratio: 16/9; text-decoration: none;">
+                <div class="card-bg lp1-site-bg"
+                    style="background-color: #1f1f22; border: 1px solid rgba(164,165,255,0.1);"></div>
+                <div class="card-content">
+                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION CLIENT</p>
+                    <h2 class="headline-sm" style="font-size: 1.4rem;">LP111</h2>
+                </div>
+            </a>
+
+            <a href="https://voxyagencedigitale.framer.website/" class="bento-card group" target="_blank"
+                style="aspect-ratio: 16/9; text-decoration: none;">
+                <div class="card-bg voxy-site-bg"
+                    style="background-color: #1f1f22; border: 1px solid rgba(164,165,255,0.1);"></div>
+                <div class="card-content">
+                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION CLIENT</p>
+                    <h2 class="headline-sm" style="font-size: 1.4rem;">Voxy Agence Digitale</h2>
+                </div>
+            </a>
+
+            <a href="https://wizit.framer.website/" class="bento-card group" target="_blank"
+                style="aspect-ratio: 16/9; text-decoration: none;">
+                <div class="card-bg wizit-site-bg"
+                    style="background-color: #1f1f22; border: 1px solid rgba(164,165,255,0.1);"></div>
+                <div class="card-content">
+                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION CLIENT</p>
+                    <h2 class="headline-sm" style="font-size: 1.4rem;">Wizit</h2>
+                </div>
+            </a>
+
+            <a href="https://illirmenuiserie.framer.website/" class="bento-card group" target="_blank"
+                style="aspect-ratio: 16/9; text-decoration: none;">
+                <div class="card-bg illir-site-bg"
+                    style="background-color: #1f1f22; border: 1px solid rgba(164,165,255,0.1);"></div>
+                <div class="card-content">
+                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION CLIENT</p>
+                    <h2 class="headline-sm" style="font-size: 1.4rem;">Illir Menuiserie</h2>
+                </div>
+            </a>
+
+            <a href="https://justix.framer.website/" class="bento-card group" target="_blank"
+                style="aspect-ratio: 16/9; text-decoration: none;">
+                <div class="card-bg justix-site-bg"
+                    style="background-color: #1f1f22; border: 1px solid rgba(164,165,255,0.1);"></div>
+                <div class="card-content">
+                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION CLIENT</p>
+                    <h2 class="headline-sm" style="font-size: 1.4rem;">Justix</h2>
+                </div>
+            </a>
+
+            <a href="https://funky-frictionless-314231.framer.app/" class="bento-card group" target="_blank"
+                style="aspect-ratio: 16/9; text-decoration: none;">
+                <div class="card-bg funky-site-bg"
+                    style="background-color: #1f1f22; border: 1px solid rgba(164,165,255,0.1);"></div>
+                <div class="card-content">
+                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION CLIENT</p>
+                    <h2 class="headline-sm" style="font-size: 1.4rem;">Funky Frictionless</h2>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Contact Section -->
+    <section id="contact" class="reveal-up"
+        style="margin-top: 6rem; margin-bottom: 2rem; padding: 4rem 1rem; text-align: center; background: linear-gradient(180deg, rgba(14,14,16,0) 0%, rgba(164,165,255,0.05) 100%);">
+        <p class="eyebrow" style="color: var(--secondary);">VOTRE PROCHAIN SUCCÈS</p>
+        <h2 class="display-lg" style="font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 2rem;">Prêt à <span
+                class="gradient-text">Dominer</span> votre marché ?</h2>
+        <p
+            style="font-size: 1.2rem; color: var(--on-surface-variant); max-width: 600px; margin: 0 auto 3rem auto; line-height: 1.6;">
+            Discutons de vos objectifs et construisons ensemble un écosystème digital taillé pour exploser vos
+            conversions.</p>
+
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="mailto:contact@votreagence.com" class="btn-primary tooltip-container"
+                style="font-size: 1.1rem; padding: 1.2rem 3rem; text-decoration: none; box-shadow: 0 0 30px rgba(164,165,255,0.3);">PRENDRE
+                RENDEZ-VOUS</a>
+        </div>
+    </section>
+
+    <footer
+        style="text-align: center; border-top: 1px solid rgba(255,255,255,0.05); padding: 2rem 0; margin-top: 2rem;">
+        <p style="color: var(--on-surface-variant); font-size: 0.9rem;">&copy; 2026 Agence Digitale 360°. Tous droits
+            réservés.</p>
+    </footer>
+
+    <!-- Modal for Project Details -->
+    <div id="project-modal" class="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content glass-panel" style="max-width: 1000px;">
+            <button class="close-btn">&times;</button>
+            <p class="label-sm" id="modal-category">Catégorie</p>
+            <h2 class="headline-sm" id="modal-title">Titre du Projet</h2>
+            <div class="modal-body" id="modal-body">
+                <!-- Description dynamique + PDF injecté ici -->
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
