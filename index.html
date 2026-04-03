@@ -82,9 +82,8 @@
     <main class="gallery-container">
         <!-- Bento Grid item 1: SAVE YOUR CAR -->
         <article class="bento-card bento-card-large group" data-project="save-your-car">
-            <video class="bg-video lazy-video" loop muted playsinline>
-                <source data-src="assets/Vidéo Présentation APP.mp4" type="video/mp4">
-            </video>
+            <div class="card-bg lazy-bg" data-bg="assets/save-your-car-thumb.png"
+                style="opacity: 0.6; transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.4s;"></div>
             <div class="card-content">
                 <p class="label-sm">APPLICATION MOBILE</p>
                 <h2 class="headline-sm">Save Your Car</h2>
@@ -129,6 +128,24 @@
                 <h2 class="headline-sm">Naan Restaurant</h2>
             </div>
         </article>
+
+        <!-- MAMA NOI Project added -->
+        <article class="bento-card bento-card-tall group" data-project="mama-noi">
+            <div class="card-bg lazy-bg" data-bg="assets/MAMA_NOI_LOGO_VECTOR-1-removebg-preview.png"
+                style="background-size: contain; background-repeat: no-repeat; opacity: 0.4;"></div>
+            <div class="card-content">
+                <div style="display: flex; justify-content: space-between; align-items: start;">
+                    <div>
+                        <p class="label-sm" style="color: var(--secondary); margin-bottom: var(--spacing-2);">DIRECTION
+                            ARTISTIQUE</p>
+                        <h2 class="headline-md">Mama Noï</h2>
+                    </div>
+                </div>
+                <p style="color: var(--on-surface-variant); margin-top: var(--spacing-4); max-width: 80%;">Identité
+                    visuelle impactante et univers graphique.</p>
+            </div>
+        </article>
+
     </main>
 
     <!-- Nos Sites Section -->
@@ -140,14 +157,14 @@
         </div>
 
         <div class="sites-grid"
-            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--spacing-6);">
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-6);">
 
             <a href="https://oceanbeef.framer.website/" class="bento-card group" target="_blank"
                 style="aspect-ratio: 16/9; text-decoration: none;">
                 <div class="card-bg ocean-beef-site-bg"
                     style="background-color: #1f1f22; border: 1px solid rgba(164,165,255,0.1);"></div>
                 <div class="card-content">
-                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION CLIENT</p>
+                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION</p>
                     <h2 class="headline-sm" style="font-size: 1.4rem;">Ocean Beef</h2>
                 </div>
             </a>
@@ -157,7 +174,7 @@
                 <div class="card-bg caldeira-site-bg"
                     style="background-color: #1f1f22; border: 1px solid rgba(164,165,255,0.1);"></div>
                 <div class="card-content">
-                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION CLIENT</p>
+                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION</p>
                     <h2 class="headline-sm" style="font-size: 1.4rem;">Caldeira Parfums</h2>
                 </div>
             </a>
@@ -167,7 +184,7 @@
                 <div class="card-bg lp1-site-bg"
                     style="background-color: #1f1f22; border: 1px solid rgba(164,165,255,0.1);"></div>
                 <div class="card-content">
-                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION CLIENT</p>
+                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION</p>
                     <h2 class="headline-sm" style="font-size: 1.4rem;">LP111</h2>
                 </div>
             </a>
@@ -177,7 +194,7 @@
                 <div class="card-bg voxy-site-bg"
                     style="background-color: #1f1f22; border: 1px solid rgba(164,165,255,0.1);"></div>
                 <div class="card-content">
-                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION CLIENT</p>
+                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION</p>
                     <h2 class="headline-sm" style="font-size: 1.4rem;">Voxy Agence Digitale</h2>
                 </div>
             </a>
@@ -187,7 +204,7 @@
                 <div class="card-bg wizit-site-bg"
                     style="background-color: #1f1f22; border: 1px solid rgba(164,165,255,0.1);"></div>
                 <div class="card-content">
-                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION CLIENT</p>
+                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION</p>
                     <h2 class="headline-sm" style="font-size: 1.4rem;">Wizit</h2>
                 </div>
             </a>
@@ -197,7 +214,7 @@
                 <div class="card-bg illir-site-bg"
                     style="background-color: #1f1f22; border: 1px solid rgba(164,165,255,0.1);"></div>
                 <div class="card-content">
-                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION CLIENT</p>
+                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION</p>
                     <h2 class="headline-sm" style="font-size: 1.4rem;">Illir Menuiserie</h2>
                 </div>
             </a>
@@ -207,7 +224,7 @@
                 <div class="card-bg justix-site-bg"
                     style="background-color: #1f1f22; border: 1px solid rgba(164,165,255,0.1);"></div>
                 <div class="card-content">
-                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION CLIENT</p>
+                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION</p>
                     <h2 class="headline-sm" style="font-size: 1.4rem;">Justix</h2>
                 </div>
             </a>
@@ -217,7 +234,7 @@
                 <div class="card-bg funky-site-bg"
                     style="background-color: #1f1f22; border: 1px solid rgba(164,165,255,0.1);"></div>
                 <div class="card-content">
-                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION CLIENT</p>
+                    <p class="label-sm" style="color: rgba(255,255,255,0.5); font-weight: 500;">RÉALISATION</p>
                     <h2 class="headline-sm" style="font-size: 1.4rem;">Funky Frictionless</h2>
                 </div>
             </a>
