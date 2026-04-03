@@ -136,8 +136,13 @@ h4 {
 }
 
 .headline-sm {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.external-card {
+    aspect-ratio: 16/9;
+    min-height: unset;
 }
 
 .label-sm {
@@ -468,14 +473,24 @@ h4 {
     .bento-card,
     .bento-card-large,
     .bento-card-tall,
-    .bento-card-wide {
+    .bento-card-wide,
+    .external-card {
         grid-column: span 1 !important;
         grid-row: span 1 !important;
         min-height: 380px !important;
+        aspect-ratio: auto !important;
     }
 
     .display-lg {
         font-size: clamp(2.5rem, 6vw, 4.5rem) !important;
+    }
+
+    .headline-md {
+        font-size: 1.5rem !important;
+    }
+
+    .headline-sm {
+        font-size: 1.25rem !important;
     }
 
     .hero {
