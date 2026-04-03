@@ -119,6 +119,11 @@ body {
     /* Custom cursor */
 }
 
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
 /* Typography */
 h1,
 h2,
