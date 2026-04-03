@@ -114,6 +114,21 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             pdf: 'assets/Maison Siraya.pdf'
         },
+        'mama-noi': {
+            title: 'Mama Noï',
+            category: 'DIRECTION ARTISTIQUE',
+            description: `
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="font-family: 'Space Grotesk', monospace; color: var(--primary); margin-bottom: 0.5rem; font-size: 1rem; letter-spacing: 0.1em;">CRÉATION D'IDENTITÉ</h3>
+                    <p style="margin-bottom: 1rem; font-size: 1.1rem; line-height: 1.6;">Pour Mama Noï, nous avons déployé une direction artistique intégrale afin d'établir un univers de marque percutant. De la conception typographique unique jusqu'à la charte iconographique, l'objectif était de créer une empreinte visuelle mémorable et instantanément reconnaissable.</p>
+                </div>
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="font-family: 'Space Grotesk', monospace; color: var(--secondary); margin-bottom: 0.5rem; font-size: 1rem; letter-spacing: 0.1em;">DÉPLOIEMENT DIGITAL & PRINT</h3>
+                    <p style="margin-bottom: 1rem; font-size: 1.1rem; line-height: 1.6;">Le profil de la marque a été décliné habilement sur de multiples plateformes : conception des assets réseaux sociaux, formats immersifs pour le marketing de contenu, et design des supports d'impression. La fluidité du logotype garantit une esthétique inébranlable sur chaque point de contact client.</p>
+                </div>
+            `,
+            pdf: null
+        },
         'naan': {
             title: 'Naan Restaurant',
             category: 'IDENTITÉ & COMMUNICATION',

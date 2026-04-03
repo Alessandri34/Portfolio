@@ -281,10 +281,15 @@ h4 {
 }
 
 /* Gallery Grid (Bento) */
+.section-header,
 .gallery-container {
-    padding: var(--spacing-16);
+    padding: 0 4rem;
+}
+
+.gallery-container {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(180px, auto);
     gap: var(--spacing-6);
     margin-bottom: var(--spacing-24);
 }
@@ -452,6 +457,7 @@ h4 {
 @media screen and (max-width: 900px) {
 
     .gallery-container,
+    .section-header,
     .sites-grid {
         grid-template-columns: 1fr !important;
         gap: var(--spacing-6);
