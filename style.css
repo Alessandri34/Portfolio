@@ -287,7 +287,8 @@ h4 {
 
 /* Gallery Grid (Bento) */
 .section-header,
-.gallery-container {
+.gallery-container,
+.sites-grid {
     padding: 0 4rem;
 }
 
@@ -473,12 +474,17 @@ h4 {
     .bento-card,
     .bento-card-large,
     .bento-card-tall,
-    .bento-card-wide,
-    .external-card {
+    .bento-card-wide {
         grid-column: span 1 !important;
         grid-row: span 1 !important;
         min-height: 380px !important;
-        aspect-ratio: auto !important;
+    }
+
+    .external-card {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+        min-height: unset !important;
+        aspect-ratio: 16/9 !important;
     }
 
     .display-lg {
