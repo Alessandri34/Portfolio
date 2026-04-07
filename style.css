@@ -480,6 +480,10 @@ h4 {
         padding-right: var(--spacing-6) !important;
     }
 
+    .gallery-container {
+        padding-top: 6rem !important;
+    }
+
     .bento-card,
     .bento-card-large,
     .bento-card-tall,
@@ -511,6 +515,7 @@ h4 {
     .hero {
         padding-left: var(--spacing-6) !important;
         padding-right: var(--spacing-6) !important;
+        padding-top: 10rem !important;
         align-items: center;
         text-align: center;
     }
@@ -531,6 +536,7 @@ h4 {
     }
 
     .glass-nav {
+        top: 1rem !important;
         width: 95%;
         padding: 0 1.5rem;
     }
