@@ -35,48 +35,139 @@
     </nav>
 
     <header class="hero">
-        <div class="hero-content">
-            <p class="eyebrow">STUDIO CRÉATIF DIGITAL</p>
-            <h1 class="display-lg">Nous Créons<br>des Expériences<br><span class="gradient-text">Premium</span>.</h1>
-            <p class="hero-description"
-                style="font-size: 1.25rem; color: var(--on-surface-variant); max-width: 650px; margin-top: 1.5rem; margin-bottom: 2rem; line-height: 1.6;">
-                Agence Digitale 360° : Création de sites, applications mobiles et campagnes marketing. Décuplez votre
-                chiffre d'affaires grâce à notre expertise. Nous construisons des écosystèmes digitaux sur-mesure conçus
-                pour captiver votre audience et faire exploser vos conversions.</p>
+        <!-- Background Image with Gradient Mask -->
+        <div class="hero-bg-image"></div>
+        <div class="hero-background"></div>
 
-            <div class="hero-services"
-                style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; max-width: 700px;">
-                <div class="glass-panel"
-                    style="padding: 0.6rem 1.2rem; border-radius: 99px; border: 1px solid rgba(164,165,255,0.4);">
-                    <span
-                        style="font-family: 'Space Grotesk', monospace; font-size: 0.85rem; color: var(--primary); font-weight: 700; letter-spacing: 0.05em;">SITES
-                        WEB HAUTE PERFORMANCE</span>
+        <div class="hero-grid">
+            <!-- LEFT COLUMN -->
+            <div class="hero-left">
+                <!-- Badge -->
+                <div class="hero-badge anim-fade-in anim-delay-1">
+                    <span class="badge-dot"></span>
+                    <span>STUDIO CRÉATIF DIGITAL</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#facc15" stroke="#facc15" stroke-width="2">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
                 </div>
-                <div class="glass-panel"
-                    style="padding: 0.6rem 1.2rem; border-radius: 99px; border: 1px solid rgba(0,238,252,0.4);">
-                    <span
-                        style="font-family: 'Space Grotesk', monospace; font-size: 0.85rem; color: var(--secondary); font-weight: 700; letter-spacing: 0.05em;">APPLICATIONS
-                        MOBILES SUR-MESURE</span>
-                </div>
-                <div class="glass-panel"
-                    style="padding: 0.6rem 1.2rem; border-radius: 99px; border: 1px solid rgba(164,165,255,0.4);">
-                    <span
-                        style="font-family: 'Space Grotesk', monospace; font-size: 0.85rem; color: var(--primary); font-weight: 700; letter-spacing: 0.05em;">ACQUISITION
-                        & MARKETING DIGITAL</span>
-                </div>
-                <div class="glass-panel"
-                    style="padding: 0.6rem 1.2rem; border-radius: 99px; border: 1px solid rgba(0,238,252,0.4);">
-                    <span
-                        style="font-family: 'Space Grotesk', monospace; font-size: 0.85rem; color: var(--secondary); font-weight: 700; letter-spacing: 0.05em;">MAXIMISATION
-                        CONVERSIONS CLIENT</span>
+
+                <!-- Heading -->
+                <h1 class="display-lg anim-fade-in anim-delay-2">Nous Créons<br>des Expériences<br><span
+                        class="gradient-text">Premium</span>.</h1>
+
+                <!-- Description -->
+                <p class="hero-description anim-fade-in anim-delay-3">
+                    Agence Digitale 360° : Création de sites, applications mobiles et campagnes marketing. Décuplez
+                    votre
+                    chiffre d'affaires grâce à notre expertise.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta-row anim-fade-in anim-delay-4">
+                    <button class="btn-primary"
+                        onclick="document.querySelector('.gallery-container').scrollIntoView({behavior: 'smooth'})">
+                        EXPLORER LA GALERIE
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </button>
+                    <a href="#contact" class="btn-outline">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"
+                            stroke-width="1">
+                            <polygon points="5 3 19 12 5 21 5 3" />
+                        </svg>
+                        DÉMARRER UN PROJET
+                    </a>
                 </div>
             </div>
 
-            <button class="btn-primary" style="margin-top: 1.5rem;"
-                onclick="document.querySelector('.gallery-container').scrollIntoView({behavior: 'smooth'})">EXPLORER LA
-                GALERIE</button>
+            <!-- RIGHT COLUMN -->
+            <div class="hero-right anim-fade-in anim-delay-5">
+                <!-- Stats Card -->
+                <div class="glass-stats-card">
+                    <div class="stats-card-glow"></div>
+                    <div class="stats-card-inner">
+                        <!-- Header -->
+                        <div class="stats-header">
+                            <div class="stats-icon-box">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <circle cx="12" cy="12" r="6" />
+                                    <circle cx="12" cy="12" r="2" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="stats-big-number">150+</div>
+                                <div class="stats-label">Projets Livrés</div>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="stats-progress-section">
+                            <div class="stats-progress-header">
+                                <span class="stats-label">Satisfaction Client</span>
+                                <span class="stats-value">98%</span>
+                            </div>
+                            <div class="stats-progress-track">
+                                <div class="stats-progress-fill" style="width: 98%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="stats-divider"></div>
+
+                        <!-- Mini Stats Grid -->
+                        <div class="stats-mini-grid">
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label-sm">ANS</span>
+                            </div>
+                            <div class="stat-separator"></div>
+                            <div class="stat-item">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label-sm">SUPPORT</span>
+                            </div>
+                            <div class="stat-separator"></div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label-sm">QUALITÉ</span>
+                            </div>
+                        </div>
+
+                        <!-- Tag Pills -->
+                        <div class="stats-tags">
+                            <div class="tag-pill">
+                                <span class="tag-dot-wrapper">
+                                    <span class="tag-dot-ping"></span>
+                                    <span class="tag-dot-solid"></span>
+                                </span>
+                                ACTIVE
+                            </div>
+                            <div class="tag-pill">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="#eab308" stroke="#eab308"
+                                    stroke-width="2">
+                                    <path d="M2 4l3 12h14l3-12-8.5 7L12 2 10.5 11z" />
+                                </svg>
+                                PREMIUM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Marquee Card -->
+                <div class="glass-marquee-card">
+                    <h3 class="marquee-title">Approuvé par nos Clients</h3>
+                    <div class="marquee-mask">
+                        <div class="marquee-track" id="marqueeTrack">
+                            <!-- Filled by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="hero-background"></div>
     </header>
 
     <main class="gallery-container">

@@ -1,4 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    // ===== MARQUEE CLIENT LIST =====
+    const clients = [
+        { name: 'Caldeira', symbol: '◆' },
+        { name: 'Justix', symbol: '⬡' },
+        { name: 'Save Your Car', symbol: '▲' },
+        { name: 'Mama Noï', symbol: '✦' },
+        { name: 'Naan Restaurant', symbol: '●' },
+        { name: 'Ocean Beef', symbol: '◇' },
+        { name: 'MoneyInflu', symbol: '◈' },
+        { name: 'Wizit', symbol: '▣' },
+    ];
+    const marqueeTrack = document.getElementById('marqueeTrack');
+    if (marqueeTrack) {
+        // Triple the list for seamless loop
+        const allClients = [...clients, ...clients, ...clients];
+        marqueeTrack.innerHTML = allClients.map(c =>
+            `<div class="marquee-item">
+                <span style="font-size:1.2rem;color:var(--primary)">${c.symbol}</span>
+                <span class="marquee-item-name">${c.name}</span>
+            </div>`
+        ).join('');
+    }
+
     // Custom Cursor Tracker
     const follower = document.getElementById('cursor-follower');
 
