@@ -267,12 +267,11 @@ h4 {
 
 /* Hero Section — Glassmorphism Two-Column */
 .hero {
-    min-height: 100vh;
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: center;
-    padding: 8rem 4rem 4rem;
+    padding: 9rem 4rem 5rem;
 }
 
 .hero-bg-image {
@@ -302,10 +301,10 @@ h4 {
     position: relative;
     z-index: 10;
     display: grid;
-    grid-template-columns: 7fr 5fr;
+    grid-template-columns: 3fr 2fr;
     gap: 3rem;
-    align-items: start;
-    max-width: 1400px;
+    align-items: center;
+    max-width: 1200px;
     margin: 0 auto;
     width: 100%;
 }
@@ -321,7 +320,8 @@ h4 {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-top: 3rem;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 /* Hero Badge */
@@ -713,7 +713,7 @@ h4 {
 
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(180px, auto);
     gap: var(--spacing-6);
     margin-bottom: var(--spacing-24);
@@ -724,7 +724,7 @@ h4 {
     border-radius: 12px;
     background: var(--surface-container-low);
     overflow: hidden;
-    grid-column: span 4;
+    grid-column: span 1;
     min-height: 400px;
     display: flex;
     flex-direction: column;
@@ -732,7 +732,7 @@ h4 {
     padding: var(--spacing-6);
     transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), background 0.4s;
     border: 1px solid var(--outline-variant);
-    cursor: none;
+    cursor: pointer;
 }
 
 .bento-card:hover {
@@ -741,18 +741,18 @@ h4 {
 }
 
 .bento-card-large {
-    grid-column: span 5;
-    min-height: 600px;
+    grid-column: span 2;
+    min-height: 500px;
 }
 
 .bento-card-tall {
-    grid-column: span 3;
+    grid-column: span 1;
     grid-row: span 2;
-    min-height: 800px;
+    min-height: 500px;
 }
 
 .bento-card-wide {
-    grid-column: span 5;
+    grid-column: span 2;
     min-height: 400px;
 }
 
@@ -915,7 +915,7 @@ h4 {
     }
 
     .display-lg {
-        font-size: clamp(2.5rem, 6vw, 4.5rem) !important;
+        font-size: clamp(2rem, 8vw, 3.5rem) !important;
     }
 
     .headline-md {
@@ -944,6 +944,8 @@ h4 {
 
     .hero-right {
         margin-top: 0;
+        max-width: 100%;
+        overflow: hidden;
     }
 
     .hero-cta-row {
@@ -964,8 +966,28 @@ h4 {
     }
 
     .btn-outline {
-        padding: 1rem 1.8rem;
-        font-size: 0.85rem;
+        padding: 0.8rem 1.4rem;
+        font-size: 0.75rem;
+    }
+
+    .glass-stats-card {
+        padding: 1.5rem;
+    }
+
+    .stats-big-number {
+        font-size: 1.6rem;
+    }
+
+    .hero-cta-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-cta-row .btn-primary,
+    .hero-cta-row .btn-outline {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
     }
 
     .hero-background {
@@ -974,10 +996,14 @@ h4 {
     }
 
     .glass-nav {
-        top: 1rem !important;
+        top: 0.75rem !important;
         width: 92%;
         padding: 0 1rem;
-        max-width: 100vw;
+        max-width: calc(100vw - 2rem);
+    }
+
+    .nav-cta {
+        display: none !important;
     }
 
     .nos-sites-section>div {
